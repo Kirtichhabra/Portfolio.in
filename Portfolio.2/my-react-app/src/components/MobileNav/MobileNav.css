@@ -1,0 +1,50 @@
+/* MobileNav.css */
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+    display: none;
+    justify-content: center; /* Center the menu horizontally */
+    align-items: center; /* Center the menu vertically */
+    z-index: 999; /* Ensure the menu is above other content */
+    transition: all 0.3s ease; /* Smooth transition animation */
+    opacity: 0; /* Initially hidden */
+    box-shadow: 0px 29px 80px rgba(0, 0, 0, 0.3);
+    transform: translateX(-100vw);
+
+}
+
+.mobile-menu.active {
+    opacity: 1; /* Make the menu visible */
+    transform: translatex(0); /* Make the menu clickable */
+}
+
+.mobile-menu-container {
+    width: 60vw;
+    height:100vh; /* Half of the screen width */
+    background-color: #342864; /* Background color of the menu */
+    padding: 2rem; /* Add some padding */
+}
+
+.mobile-menu img{
+    margin-bottom: 3rem;
+}
+
+.mobile-menu ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+    margin-left: -2rem;
+}
+ 
+
+@media(max-width: 769px){
+    .mobile-menu{
+        display:block;
+    }
+}

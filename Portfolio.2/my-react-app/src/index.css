@@ -1,0 +1,14 @@
+@import url()
+
+* {
+  margin: 0;
+  font-family: "Poppins"
+    sans-serif;
+  box-sizing: border-box;;
+  background-color: #060417;
+}
+
+body{
+  color:#fff;
+  background-color: #060417;
+}

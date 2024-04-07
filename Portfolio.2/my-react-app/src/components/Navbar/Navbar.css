@@ -1,0 +1,112 @@
+.nav-wrapper {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 2rem; /* Adjusted padding */
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    backdrop-filter: blur(50px);
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 12rem;
+    height: auto;
+}
+
+.menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu-item {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin-right: 1rem; /* Adjusted margin */
+    cursor: pointer;
+}
+
+.contact-btn {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #ffffff;
+    background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+    padding: 0.6rem 2rem;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    color: #a993fe;
+    background: #000;
+    outline: 1.5px solid #a993fe;
+    /* Add any additional hover effects here */
+}
+a:hover {
+    color: #a993fe;
+    background: #000;
+    outline: 1.5px solid #a993fe;
+  }
+
+/* New CSS for positioning menu items */
+.menu-item:nth-last-child(2) {
+    margin-right: auto;
+}
+
+.menu-btn{
+    width:2.5rem;
+    height:2.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    border:none;
+    border-radius:0.4rem;
+    color:#fff;
+    background:linear-gradient(90deg,#a993fe -0.13%,#7e61e7 99.87%);
+    line-height:0;
+    cursor:pointer;
+    transition:all 0.4s ease;
+    display:none;
+
+}
+
+.menu-btn:hover{
+    color:#fff;
+    background:#000;
+    border:1px solid #a993fe;
+}
+
+@media(max-width:425px){
+    .logo{
+        width: 10rem;
+        height: auto;
+    }
+}
+
+@media(max-width: 769px){
+    .menu-btn{
+        display:block;
+    }
+    .nav-content ul{
+        display:none;
+    }
+}
+
+@media(max-width:1325px){
+    .nav-wrapper{
+        padding: 0 2rem;
+    }
+}
